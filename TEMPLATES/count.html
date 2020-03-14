@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>统计总数,总字数为{{ count }}字</h1>
+
+    <h2>你的文本</h2>
+{{ text }}
+        <h2>出现频率</h2>
+    {% for key,value in sorted %}
+    {{ key }} - {{ value }}
+    <br>
+    {% endfor %}
+</body>
+</html>
